@@ -1,0 +1,5 @@
+admin:
+  email: admin@localhost
+  name: Admin
+  password: admin
+  roles: [admin]

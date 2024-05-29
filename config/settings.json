@@ -1,0 +1,33 @@
+{
+  "logger": {
+    "name": "WebApp",
+    "path": "/logs/app.log",
+    "level": "debug"
+  },
+  "pico": {
+    "configDir": "config/",
+    "pluginsDir": "plugins/",
+    "themesDir": "themes/",
+    "enableLocalPlugins": true
+  },
+  "socials": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/bouffen.en.piraten",
+      "icon": "facebook"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/vive.les.gueux/",
+      "icon": "instagram"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/17904908",
+      "icon": "linkedin"
+    }
+  ],
+  "UserProvider": {
+    "file": "/config/users/users.yml"
+  }
+}

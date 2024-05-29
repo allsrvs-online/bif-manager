@@ -1,0 +1,67 @@
+{
+    "name": "allsrvs/boilerplate-webapp",
+    "type": "project",
+    "description": "Boilerplate for a simple web application using Pico CMS",
+    "keywords": [ "pico", "picocms", "pico-cms", "simple", "flat-file", "cms", "content-management", "website", "markdown-to-html", "php", "markdown", "yaml", "twig", "composer-project" ],
+    "homepage": "https://allsrvs.online/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Theo Hollenberg",
+            "email": "theo@hollenberg.eu",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "The Pico Community",
+            "homepage": "http://picocms.org/"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/picocms/pico-composer/graphs/contributors"
+        }
+    ],
+    "support": {
+        "docs": "http://picocms.org/docs",
+        "issues": "https://github.com/picocms/Pico/issues",
+        "source": "https://github.com/picocms/Pico"
+    },
+    "require": {
+        "php": ">=7.4",
+        "picocms/pico": "^2.1",
+        "picocms/pico-theme": "^2.1",
+        "picocms/pico-deprecated": "^2.1",
+        "picocms/composer-installer": "^1.0",
+        "php-di/php-di": "^7.0",
+        "nyholm/psr7": "^1.8",
+        "monolog/monolog": "^2.9",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "jangregor/phpstan-prophecy": "^1.0.0",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/extension-installer": "^1.2.0",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.6.19",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "picocms/composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Local\\": "local/",
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t .",
+        "test": "phpunit --colors=always --testdox --coverage-text tests"
+    }
+
+}

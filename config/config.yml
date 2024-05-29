@@ -1,7 +1,7 @@
 ##
 # Basic
 #
-site_title: Boilerplate             # The title of your website
+site_title: BIF Manager             # The title of your website
 base_url: ~                         # Pico will try to guess its base URL, if this fails, override it here;
                                     #     Example: https://example.com/pico/
 rewrite_url: ~                      # A boolean (true or false) indicating whether URL rewriting is forced
@@ -62,4 +62,4 @@ my_custom_setting: Hello World!     # You can access custom settings in themes u
 ##
 # SessionPlugin
 #
-open_pages: [index, login] # Pages that are open to the public
+open_pages: [login] # Pages that are open to the public

@@ -442,3 +442,20 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
+
+.page {
+    width: 100%;
+    padding: 0;
+}
+
+.page th, .page td {
+    border: none;
+}
+
+td.half, th.half {
+    width: 50%;
+}
+
+.page button {
+
+}

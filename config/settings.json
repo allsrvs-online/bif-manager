@@ -29,5 +29,19 @@
   ],
   "UserProvider": {
     "file": "/config/users/users.yml"
+  },
+  "cyclr": {
+    "clusters": {
+      "eu": {
+        "name": "Europe",
+        "api": {
+          "url": "https://api.eu.cyclr.com",
+          "clientId": "5RZpSggSL5QkNdmxP6Ku4fTt8r8k07uu",
+          "clientSecret": "eXIHipUyAhoGa0aLKgFUrzCPYjsiOdzMCaT7Bs0FhvMNtfcNUD",
+          "accessKey": null,
+          "expires": null
+        }
+      }
+    }
   }
 }

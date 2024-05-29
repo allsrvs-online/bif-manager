@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="{{ theme_url }}/css/droidsans.css" type="text/css" />
     <link rel="stylesheet" href="{{ theme_url }}/css/fontello.css" type="text/css" />
     <script src="https://kit.fontawesome.com/ae9fd78097.js" crossorigin="anonymous"></script>
+    {% if pages["_meta"].meta.logo %}
+        <link rel="icon" type="image/png" href="{{ pages["_meta"].meta.logo|url }}" />
+    {% endif %}
 </head>
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
 
@@ -84,7 +87,7 @@
                 {% endfor %}
             </div>
             <p>
-                footer text
+                &copy; {{ "now"|date("Y") }} {{ site_title }}
             </p>
         </div>
     </div>
